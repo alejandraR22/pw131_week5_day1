@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Favorite Five</title>
+
+</head>
+<body>
+    <h1>My Top 5 Favorite Artists/Sports Figures</h1>
+    <ul>
+        {% for person in favorite_people %}
+          <li>{{person}}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{url_for('index')}}">Back to Home</a>
+</body>
+</html>
